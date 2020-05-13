@@ -17,7 +17,7 @@ Syntax | Fieldname required | Results in:
 --- | --- | ---
 title | no | a title to your backend
 sub_title | no | a subtitle to your backend
-`|||` | no | structures new page
+3xPipes | no | structures new page 
 txt | yes | `<imput type="text">` 
 ml_txt | yes | `<textarea></textarea>`
 img | yes | `<imput type="file">` 
