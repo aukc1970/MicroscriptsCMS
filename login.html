@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="backend/backendViewStyle.css">
+    <title>Loged Out</title>
+</head>
+<body>
+    <div id="backend">
+
+    </div>
+
+    <script>
+        $(document).ready(function(){
+            var userName = prompt("Please enter your name");
+            var userPassword = prompt("Please enter your Password");
+
+            if (userName != null && userPassword != null) {
+                $.post( 
+                    "backend/microscriptsCMS.php",
+                    {Name: userName,Password: userPassword},
+                    function(data) {
+                        $("#backend").html(data);
+                    }
+                );
+            }else{
+                window.location = "index.php";
+            };
+        });
+    </script>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

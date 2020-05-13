@@ -1,0 +1,90 @@
+body {
+  margin-top: 90px;
+  background-color: white;
+  color: black;
+  font-family: sans-serif;
+}
+
+nav {
+  padding: 10px 0px;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 5px black;
+          box-shadow: 0px 2px 5px black;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+nav a, nav h1 {
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  margin: 0px;
+}
+
+form {
+  display: inherit;
+  margin: 0px auto;
+}
+
+form div{
+  margin:10px;
+}
+
+form .page {
+  padding: 7px;
+  border: 2px solid gray;
+}
+
+form .page hr {
+  border: 0.5px solid black;
+}
+
+form input, form textarea {
+  border: 1px solid black;
+  padding: 15px 20px;
+  color: black;
+  width: 100%;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+}
+
+form input[type=submit] {
+  margin-top: 10px;
+}
+
+form label {
+  margin: 20px 0px 5px 0px;
+  display: inline-block;
+  color: black;
+}
+
+form .save {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+@media only screen and (min-width: 760px) {
+  form {
+    display: -ms-grid;
+    display: grid;
+    /* grid-gap: 20px; */
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+  nav a {
+    float: left;
+  }
+  body {
+    margin-top: 55px;
+  }
+}
+/*# sourceMappingURL=backendViewStyle.css.map */
